@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 
-
 *{
     font-family: 'Roboto Mono', monospace;
-    font-size: x-large;
+    /* font-size: x-large; */
 
 }
+
+.header {
+    padding: 0.1px;
+    text-align: left;
+    background: rgba(43, 42, 42, 0.856);
+    color: rgb(196, 196, 196);
+    font-size: 1px;
+    line-height: .5;
+    }
+
 
 .leftside, .rightside {
     height: 100vh;
@@ -38,3 +47,26 @@
     background-color:rgb(196, 196, 196)
 }
 
+@keyframes fade-in-left {
+    0%     { opacity: 0; }
+    12%    { opacity: 0; }
+    86%   { opacity: 1; }
+    /* 80%   { opacity: 0; }
+    100%  { opacity: 1; } */
+  }
+
+@keyframes fade-in-right {
+    0%     { opacity: 0; }
+    35%    { opacity: 0; }
+    100%   { opacity: 1; }
+    /* 80%   { opacity: 0; }
+    100%  { opacity: 1; } */
+  }
+  
+  .leftside h5{
+    animation: fade-in-left 3s ;
+  }
+
+  .rightside h5{
+    animation: fade-in-right 4s ;
+  }

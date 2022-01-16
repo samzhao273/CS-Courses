@@ -2,12 +2,12 @@
 
 * {
     font-family: 'Roboto Mono', monospace;
-    font-size: x-large;
+    /* font-size: x-large; */
 }
 
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 0;
+    margin: 40px;
     color:rgba(66, 66, 66, 0.856);
     background: rgba(66, 66, 66, 0.856);
   }
@@ -15,22 +15,23 @@ body {
   .header {
   padding: 0.1px;
   text-align: center;
-  background: rgba(66, 66, 66, 0.856);
+  background: rgba(43, 42, 42, 0.856);
   color: rgb(196, 196, 196);
-  font-size: 25px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1;
   }
 
 
   .content {
     padding: 40px;
-    padding-top: 27vh;
+    padding-top: 17vh;
     line-height: 1.45;
     color: rgb(196, 196, 196);
+    font-size: x-large;
 }
 
 .submit {
-    font-size: medium;
+    font-size: x-large;
     width: 130px;
     height: 60px;
     border: none;
@@ -45,7 +46,7 @@ body {
     letter-spacing: 3px;
     position: relative;
     top: 1vh;
-    padding-bottom: 20px;
+    
  
 }
   
@@ -66,3 +67,29 @@ body {
     color:rgba(66, 66, 66, 0.856)
     
 }
+
+@keyframes fade-in-text {
+    0%    { opacity: 0; }
+    10%    { opacity: 0; }
+    86%   { opacity: 1; }
+    
+  }
+
+  .content {
+    animation: fade-in-text 3s ;
+  }
+
+@keyframes fade-in-button {
+    0%     { opacity: 0; }
+    50%    { opacity: 0; }
+    90%   { opacity: 1; }
+    
+  }
+
+  .submit {
+    animation: fade-in-button 6s ;
+    
+  }
+
+
+  
