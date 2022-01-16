@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    
 }
 
 h2 {
@@ -18,14 +19,16 @@ h1 {
 .container {
     margin-top: 10px;
     padding: 32px;
+    
    
 }
 
 .select-box {
-    display: flex;
+    display: inline-block;
     width: 400px;
     flex-direction: column;
     position: relative;
+    justify-content: space-between;
 }
 
 .select-box .options-container {
@@ -93,6 +96,7 @@ h1 {
     width: 400px;
     flex-direction: column;
     position: relative;
+    justify-content: space-between;
 }
 
 .select-box2 .options-container2 {
@@ -122,6 +126,8 @@ h1 {
     max-height: 240px;
     opacity: 1;
     overflow-y: scroll;
+    margin-top: 54 px;
+
 }
 
 .select-box2 .options-container2::-webkit-scrollbar {
@@ -159,10 +165,43 @@ body {
     height: 100vh;
     /* text-align: center; */
     background-color: white;
+    
+    
    
   
 
 }
+
+.selected ,
+.selected2 {
+    position: relative;
+}
+
+
+/* .search-box input {
+    width: 90%;
+    padding: 12px 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    position : absolute;
+    border-radius: 8px 8px 0 0;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition:all 0.4s;
+}
+
+.search-box input:focus {
+    outline: none;
+
+}
+
+.select-box2 .options-container2.active ~ .search-box input {
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+
 
 /* .dropdown-course{
     height: 30vh;
