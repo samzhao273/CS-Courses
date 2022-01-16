@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 
 
 *{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
 
 }
 
@@ -23,15 +24,17 @@
 
 .leftside {
     text-align: center;
-    color: blue;
+    padding: 20px;
+    color: rgb(196, 196, 196);
     align-items: center;
-    background-color: yellow;
+    background-color: rgba(66, 66, 66, 0.856);
 
 }
 .rightside{
     text-align: center;
-    color:yellow;
+    padding: 20px;
+    color:rgba(66, 66, 66, 0.856);
     align-items: center;
-    background-color:blue
+    background-color:rgb(196, 196, 196)
 }
 
