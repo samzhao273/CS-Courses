@@ -5,6 +5,8 @@ const selected2 = document.querySelector(".selected2");
 const optionsContainer2 = document.querySelector(".options-container2")
 const optionsList2 = document.querySelectorAll(".option2");
 const searchBox = document.querySelector(".search-box input");
+
+
 let getCourses = document.getElementById('yourCourses');
 
 let cpsc100 = {
@@ -273,16 +275,17 @@ optionsList2.forEach( o => {
     o.addEventListener("click", () => {
         course = o.querySelector("label").textContent;
         optionsContainer2.classList.remove("active");
-        addCourse(course);
-        console.log(yourCourses);
-        var paragraph = document.createElement('p');
-        paragraph.innerText = course;
-        getCourses.appendChild(paragraph);
-
+        if (!yourCourses.includes(course)) {
+            addCourse(course);
+            console.log(yourCourses);
+            var paragraph = document.createElement('p');
+            paragraph.innerText = course;
+            getCourses.appendChild(paragraph);
+        };
+        
 
     })
 
-    
 })
 
 searchBox.addEventListener("keyup", function(e) {
@@ -305,6 +308,12 @@ const filterList = searchTerm => {
 function addCourse(course) {
     yourCourses.push(course);
 }
+
+
+
+
+
+
 
 
 
