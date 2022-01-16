@@ -12,15 +12,15 @@
     padding-left: 20px;
     text-align: left;
     background: rgba(29, 28, 28, 0.856);
-    color: rgb(182, 181, 181);
-    font-size: xx-small;
+    color: rgb(255, 250, 250);
+    font-size: xxx-small;
     line-height: .5;
     
     }
 
 
 .leftside, .rightside {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     font-size: x-large;
     
@@ -30,7 +30,7 @@
 @media screen and (min-width:768px) {
 
     .leftside, .rightside {
-        height: 100vh;
+        height: 86vh;
         font-size: x-large;
     }
 
@@ -78,6 +78,14 @@
     100%  { opacity: 1; } */
   }
   
+  @keyframes fade-in-button {
+    0%     { opacity: 0; }
+    60%    { opacity: 0; }
+    100%   { opacity: 1; }
+    /* 80%   { opacity: 0; }
+    100%  { opacity: 1; } */
+  }
+
   .leftside h5{
     animation: fade-in-left 3s ;
   }
@@ -85,3 +93,49 @@
   .rightside h5{
     animation: fade-in-right 4s ;
   }
+
+  .return{
+    animation: fade-in-button 7s ;
+  }
+
+  .return {
+      
+    font-size: small;
+    width: 295px;
+    height: 51px;
+    border: none;
+    color: rgb(240, 238, 238);
+    background-color: rgba(41, 41, 41, 0.856);
+    border-radius: 12px;
+    box-shadow: 0 5px rgb(46, 46, 46);
+    transition: ease-out 0.3s;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    
+    outline: none;
+    letter-spacing: 3px;
+    position: relative;
+    top: 1vh;
+    cursor: pointer;
+    user-select: none;
+    
+ 
+}
+  
+  .return:active {
+    background-color: rgba(37, 37, 37, 0.856);
+    box-shadow: 0 5px rgb(196, 196, 196);
+    transform: translateY(4px);
+  }
+
+
+  .return:hover {
+    box-shadow: inset 300px 0 0 0 rgb(100, 100, 100);
+    background-color: rgba(133, 132, 132, 0.856)
+}
+
+form{
+    text-align: right;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
