@@ -1,14 +1,6 @@
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container")
-const optionsList = document.querySelectorAll(".option");
-const selected2 = document.querySelector(".selected2");
-const optionsContainer2 = document.querySelector(".options-container2")
-const optionsList2 = document.querySelectorAll(".option2");
-const searchBox = document.querySelector(".search-box input");
+const kek = document.getElementById("kek");
 
 
-
-let getCourses = document.getElementById('yourCourses');
 
 let cpsc100 = {
     name: "CPSC 100 - Computational Thinking",
@@ -308,83 +300,34 @@ let allCpscCourses = [cpsc100, cpsc103, cpsc107, cpsc110, cpsc121, cpsc203,
 
 
 
-selected.addEventListener("click", () => {
-    optionsContainer.classList.toggle("active");
-})
-
-optionsList.forEach( o => {
-    o.addEventListener("click", () => {
-        selected.innerHTML = o.querySelector("label").innerHTML;
-        optionsContainer.classList.remove("active");
-    })
-})
+var kekeke = JSON.parse(localStorage.getItem('kek'));
 
 
-selected2.addEventListener("click", () => {
-    optionsContainer2.classList.toggle("active");
-})
 
-let course = "";
-let yourCourses = [];
 
-optionsList2.forEach( o => {
-    o.addEventListener("click", () => {
-        course = o.querySelector("label").textContent;
-        optionsContainer2.classList.remove("active");
-        if (!yourCourses.includes(course)) {
-            addCourse(course);
-            console.log(yourCourses);
-            var paragraph = document.createElement('p');
-            paragraph.innerText = course;
-            getCourses.appendChild(paragraph);
-        };
-        
 
-    })
 
-})
 
-searchBox.addEventListener("keyup", function(e) {
-    filterList(e.target.value);
+
+
+kek.addEventListener("click", function(kekeke, allCpscCourses) {
+    console.log(kekeke);
+    for (let i = 0; i < allCpscCourses.length; i++) {
+        let coursePrereq = allCpscCourses[i].prereqs;
+        for (let j = 0; j < coursePrereq.length(); j++) {
+            for (let k = 0; k < kekeke.length(); k++) {
+                if (coursePrereq[j] == kekeke[k].name) {
+                    console.log(test)
+                    var paragraph = document.createElement('p');
+                    paragraph.innerText = course;
+                    getNextCourses.appendChild(paragraph);
+                    
+                }
+            }
+        } 
+    }
+        // for (let i = 0; i < yourCourses.length; i++) {
+        //     if (yourCourses[i] 
+        // }
+
 });
-
-const filterList = searchTerm => {
-    searchTerm = searchTerm.toLowerCase();
-    optionsList.forEach( option => {
-        let label = option.firstElementChild.nextElementSibling.innerText.toLowerCase();
-        if (label.indexOf(searchTerm) != -1) {
-            option.style.display = "block";   
-        } else {
-            option.style.display = "none";
-        }
-    });
-};
-
-
-function addCourse(course) {
-    yourCourses.push(course);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
