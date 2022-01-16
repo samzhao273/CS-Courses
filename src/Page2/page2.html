@@ -12,37 +12,31 @@
     <h1> Select Your Courses </h1> 
 
 
-
-
   <body>
 
-    <nav>
-      <div class = "dropdown-course">
-        <div class="subject">
-          <button>
-            Subject
-          </button>
-          <ul>
-            <li><a href = "#"> CPSC </a></li>
-          </ul>
+    <div class="container">
+      <h2>Subject</h2>
+
+      <div class="select-box">
+        <div class="selected">
+          Select subject:
         </div>
-        <div class="course">
-          <button>
-            Course
-          </button>
-          <ul>
-            <li><a href = "#"> 100 </a></li>
-            <li><a href = "#"> 103 </a></li>
-            <li><a href = "#"> 107 </a></li>
-            <li><a href = "#"> 110 </a></li>
-          </ul>
+        <div class="options-container">
+          <div class="option">
+            <input 
+            type="radio" 
+            class="radio" 
+            id="subjects" 
+            name="subject">
+            <label for="subjects">CPSC (Computer Science)</label>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-
+    
     <form method = "get" action = "http://127.0.0.1:5500/src/Page3/page3.html">
-        <button type = "submit"> Show me My courses </button>
+        <button type = "submit"> Show me my courses </button>
     </form>
 
 
