@@ -4,8 +4,6 @@
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-   
-
     
 }
 
@@ -96,8 +94,7 @@ h1 {
 
 .select-box2 {
     position: absolute;
-    padding-left: 50vh;
-    
+    margin: auto;
     display: flex;
     width: 400px;
     flex-direction: column;
