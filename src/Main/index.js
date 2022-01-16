@@ -7,6 +7,7 @@ const optionsList2 = document.querySelectorAll(".option2");
 const searchBox = document.querySelector(".search-box input");
 
 
+
 let getCourses = document.getElementById('yourCourses');
 
 let cpsc100 = {
@@ -143,11 +144,29 @@ let cpsc319 = {
 
 }
 
+let cpsc320 = {
+    name: "CPSC 320",
+    prereqs: ["CPSC 221"],
+}
+
 let cpsc322 = {
     name: "CPSC 322 - Introduction to Artificial Intelligence",
     prereqs: ["CPSC 221"],
 
 }
+
+let cpsc330 = {
+    name: "CPSC 330",
+    prereqs: ["CPSC 210", "CPSC 210"],
+
+}
+
+let cpsc340 = {
+    name: "CPSC 340",
+    prereqs: ["CPSC 221"],
+    
+}
+
 
 let cpsc344 = {
     name: "CPSC 344 - Introduction to Human Computer Interaction Methods",
@@ -201,6 +220,12 @@ let cpsc416 = {
 
 }
 
+let cpsc417 = {
+    name: "CPSC 417",
+    prereqs: ["CPSC 313", "CPSC 317"],
+
+}
+
 let cpsc420 = {
     name: "CPSC 420 - Advanced Algorithms Design and Analysis",
     prereqs: ["CPSC 320"],
@@ -220,10 +245,23 @@ let cpsc422 = {
 
 }
 
+let cpsc425 = {
+    name: "CPSC 425",
+    prereqs: ["CPSC 221"],
+
+}
+
+
+
 let cpsc426 = {
     name: "CPSC 426 - Computer Animation",
     prereqs: ["CPSC 314"],
 
+}
+
+let cpsc427 = {
+    name: "CPSC 427",
+    prereqs: ["CPSC 221"],
 }
 
 // 3 credits of Computer Science and at least third-year standing
@@ -239,18 +277,36 @@ let cpsc440 = {
 
 }
 
-let cpsc449 = {
-    name: "CPSC 449 - Honours Thesis",
-    prereqs: ["CPSC 349"],
+let cpsc444 = {
+    name: "CPSC 444",
+    prereqs: ["CPSC 34"],
 
 }
+let cpsc445 = {
+    name: "CPSC 445",
+    prereqs: ["CPSC 320"],
+
+}
+
 
 // third year standing
 let cpsc491 = {
     name: "CPSC 491 - Interactive Digital Media Practicum",
     prereqs: ["CPSC 221", "CPSC 310", "CPSC 344"],
-
 }
+
+
+
+
+let allCpscCourses = [cpsc100, cpsc103, cpsc107, cpsc110, cpsc121, cpsc203, 
+    cpsc210,cpsc213, cpsc221, cpsc259, cpsc298, cpsc302, cpsc303, cpsc304, cpsc310,
+    cpsc311, cpsc312, cpsc313, cpsc314, cpsc317, cpsc319, cpsc320, cpsc330, cpsc340,
+    cpsc322, cpsc344, cpsc349,cpsc368, cpsc404, cpsc406, cpsc410, cpsc411, cpsc416, 
+    cpsc417, cpsc420, cpsc421, cpsc422, cpsc425, cpsc426,  cpsc427, 
+    cpsc430, cpsc440, cpsc444, cpsc445, cpsc491
+]
+
+
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
@@ -308,6 +364,14 @@ const filterList = searchTerm => {
 function addCourse(course) {
     yourCourses.push(course);
 }
+
+
+
+
+
+
+
+
 
 
 
