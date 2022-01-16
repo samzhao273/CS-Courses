@@ -1,5 +1,5 @@
-# CS-Courses
-### This application allows prospective students, or current UBC students to view the Computer Science courses that they can take at UBC. This is fully dependent on the courses that they are currently taking, as most Computer Science courses have prerequisites.
+# U B CSing
+### This application allows prospective students, or current UBC students to view the Computer Science courses they can take at UBC. This is fully dependent on the courses that they are currently taking, as most Computer Science courses have prerequisites.
 
 ### This web application offers:
 
