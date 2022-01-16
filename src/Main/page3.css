@@ -20,7 +20,7 @@
 
 
 .leftside, .rightside {
-    height: 90vh;
+    height: 10000px;
     width: 100%;
     font-size: x-large;
     
@@ -95,7 +95,15 @@
   }
 
   .return{
-    animation: fade-in-button 7s ;
+    animation: fade-in-button 5s ;
+  }
+
+  .yourCourses{
+    animation: fade-in-left 6s;
+  }
+
+  .nextCourses{
+    animation: fade-in-right 7s;
   }
 
   .return {
@@ -138,4 +146,9 @@ form{
     text-align: right;
     padding-bottom: 30px;
     padding-right: 10px;
+}
+
+
+body{
+  background-color: gray;
 }
