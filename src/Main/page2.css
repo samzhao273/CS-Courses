@@ -34,7 +34,7 @@ h1 {
 }
 
 .select-box .options-container {
-    background: #828a92;
+    background: #51575e;
     color: white;
     max-height: 0;
     width: 100%;
@@ -86,7 +86,7 @@ h1 {
 }
 
 .select-box .option:hover {
-    background: lightgrey;
+    background: rgb(109, 111, 116);
 }
 
 .select-box .option .radio {
@@ -106,8 +106,8 @@ h1 {
 }
 
 .select-box2 .options-container2 {
-    background: #828a92;
-    color: white;
+    background: #53595e;
+    color: rgb(202, 200, 200);
     max-height: 0;
     width: 100%;
     opacity: 0;
@@ -158,7 +158,7 @@ h1 {
 }
 
 .select-box2 .option2:hover {
-    background: lightgrey;
+    background: rgb(109, 111, 116);
 }
 
 .select-box2 .option2 .radio {
@@ -182,7 +182,7 @@ body {
 .button {
     display: inline-flex;
     padding: 10 px;
-    background:grey;
+    background:rgb(85, 85, 85);
     border: none;
     outline: none;
     border-radius: 10 px;
@@ -208,13 +208,13 @@ form{
 
 .startOver{
         font-size: x-large;
-        width: 110px;
-        height: 50px;
+        width: 120px;
+        height: 44px;
         border: none;
         color: rgb(196, 196, 196);
-        background-color: rgba(66, 66, 66, 0.856);
+        background-color: rgba(46, 46, 46, 0.856);
         border-radius: 12px;
-        box-shadow: 0 5px rgb(54, 54, 54);
+        box-shadow: 0 5px rgb(20, 20, 20);
         transition: ease-out 0.3s;
         font-family: 'Roboto Mono', monospace;
         font-size: 1rem;
@@ -236,8 +236,8 @@ form{
     
     
     .startOver:hover {
-        box-shadow: inset 300px 0 0 0 rgb(54, 54, 54);
-        background-color: rgba(66, 66, 66, 0.856)
+        box-shadow: inset 300px 0 0 0 rgb(37, 37, 37);
+        background-color: rgba(49, 49, 49, 0.856)
     
 }
 
@@ -245,10 +245,10 @@ form{
 .submit {
     font-size: x-large;
     width: 200px;
-    height: 60px;
+    height: 55px;
     border: none;
     color: rgb(196, 196, 196);
-    background-color: rgba(66, 66, 66, 0.856);
+    background-color: rgba(106, 106, 107, 0.856);
     border-radius: 12px;
     box-shadow: 0 5px rgb(54, 54, 54);
     transition: ease-out 0.3s;
@@ -272,8 +272,8 @@ form{
 
 
 .submit:hover {
-    box-shadow: inset 300px 0 0 0 rgb(54, 54, 54);
-    background-color: rgba(66, 66, 66, 0.856)
+    box-shadow: inset 300px 0 0 0 rgb(61, 61, 61);
+    background-color: rgba(117, 117, 117, 0.856)
 }
 
 
