@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <!-- asdasd -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>CSCourses</title>
-    <link href="page3.css" rel="stylesheet" type="text/css" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(8, 34, 88);">
+    <h2 style="color: aliceblue;">Your Courses</h2>
+    <p>Some text...</p>
+  </div>
+  <div class="column" style="background-color:rgb(18, 82, 134);">
+    <h2 style="color: aliceblue;">Courses you can take </h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
 
-  </head>
+<footer>
+  <p>by us</p>
+  <p><a href="mailto:hege@example.com">balablaba.com</a></p>
+</footer>
 
-    <h1> Courses </h1> 
-
-  <body>
-    
-    <form method = "get" action = "nothing">
-
-        <button type = "submit"> Start </button>
-        
-    </form>
-
-
-
-    <script src="page3.js"></script>
-
-
-  </body>
-
-
-
+</body>
 
 </html>
