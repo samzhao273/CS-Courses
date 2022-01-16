@@ -8,10 +8,12 @@
 
 .header {
     padding: 0.1px;
+    padding-top: 5px;
+    padding-left: 20px;
     text-align: left;
-    background: rgba(43, 42, 42, 0.856);
-    color: rgb(196, 196, 196);
-    font-size: 1px;
+    background: rgba(29, 28, 28, 0.856);
+    color: rgb(182, 181, 181);
+    font-size: xx-small;
     line-height: .5;
     }
 
@@ -19,6 +21,8 @@
 .leftside, .rightside {
     height: 100vh;
     width: 100%;
+    font-size: x-large;
+    
 }
 
 
@@ -26,25 +30,35 @@
 
     .leftside, .rightside {
         height: 100vh;
+        font-size: x-large;
     }
 
 }
 
+.leftside h5 {
+    font-size: xx-large
+}
+
+.rightside h5 {
+    font-size: xx-large
+}
 
 .leftside {
     text-align: center;
     padding: 20px;
-    color: rgb(196, 196, 196);
+    color: rgb(226, 225, 225);
     align-items: center;
     background-color: rgba(66, 66, 66, 0.856);
+    
 
 }
 .rightside{
     text-align: center;
     padding: 20px;
-    color:rgba(66, 66, 66, 0.856);
+    color:rgba(90, 90, 90, 0.856);
     align-items: center;
-    background-color:rgb(196, 196, 196)
+    background-color:rgb(233, 233, 233)
+    
 }
 
 @keyframes fade-in-left {
