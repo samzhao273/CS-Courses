@@ -5,6 +5,9 @@ const selected2 = document.querySelector(".selected2");
 const optionsContainer2 = document.querySelector(".options-container2")
 const optionsList2 = document.querySelectorAll(".option2");
 const searchBox = document.querySelector(".search-box input");
+let getCourses = document.getElementById('yourCourses');
+
+
 
 
 selected.addEventListener("click", () => {
@@ -23,11 +26,23 @@ selected2.addEventListener("click", () => {
     optionsContainer2.classList.toggle("active");
 })
 
+let course = "";
+let yourCourses = [];
+
 optionsList2.forEach( o => {
     o.addEventListener("click", () => {
-        selected2.innerHTML = o.querySelector("label").innerHTML;
+        course = o.querySelector("label").textContent;
         optionsContainer2.classList.remove("active");
+        addCourse(course);
+        console.log(yourCourses);
+        var paragraph = document.createElement('p');
+        paragraph.innerText = course;
+        getCourses.appendChild(paragraph);
+
+
     })
+
+    
 })
 
 
@@ -46,5 +61,18 @@ const filterList = searchTerm => {
         }
     });
 };
+
+
+function addCourse(course) {
+    yourCourses.push(course);
+}
+
+
+
+
+
+
+
+
 
 
