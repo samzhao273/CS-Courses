@@ -1,15 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
 head {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     
-
 }
 
 
 body {
+    height: 100vh;
     text-align: center;
     background-color: grey;
   
 
+}
+a,
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
