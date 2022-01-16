@@ -13,7 +13,7 @@ h2 {
 h1 {
     margin-top: 10vh;
     text-align: center;
-    color: rgb(196, 196, 196);
+    color: rgb(248, 244, 244);
 }
 
 .container {
@@ -28,6 +28,7 @@ h1 {
     flex-direction: column;
     position: relative;
     justify-content: space-between;
+    
 }
 
 .select-box .options-container {
@@ -57,12 +58,14 @@ h1 {
     max-height: 240px;
     opacity: 1;
     overflow-y: scroll;
+    
 }
 
 .select-box .options-container::-webkit-scrollbar {
     width: 8px;
     background: rgb(31, 34, 48);
     border-radius: 0 8px 8px 0;
+    
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
