@@ -3,6 +3,8 @@
 * {
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
+    color:rgb(196, 196, 196);
+    
 }
 
 h2 {
@@ -204,6 +206,81 @@ body {
 
 form{
     text-align: center;
+}
+
+.startOver{
+        font-size: x-large;
+        width: 110px;
+        height: 50px;
+        border: none;
+        color: rgb(196, 196, 196);
+        background-color: rgba(66, 66, 66, 0.856);
+        border-radius: 12px;
+        box-shadow: 0 5px rgb(54, 54, 54);
+        transition: ease-out 0.3s;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+        outline: none;
+        letter-spacing: 3px;
+        position: relative;
+        top: 1vh;
+        cursor: pointer;
+        user-select: none;
+    
+     
+    }
+      
+      .startOver:active {
+        background-color: rgba(66, 66, 66, 0.856);
+        box-shadow: 0 5px rgb(196, 196, 196);
+        transform: translateY(4px);
+      }
+    
+    
+    .startOver:hover {
+        box-shadow: inset 300px 0 0 0 rgb(54, 54, 54);
+        background-color: rgba(66, 66, 66, 0.856)
+    
+}
+
+
+.submit {
+    font-size: x-large;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: rgb(196, 196, 196);
+    background-color: rgba(66, 66, 66, 0.856);
+    border-radius: 12px;
+    box-shadow: 0 5px rgb(54, 54, 54);
+    transition: ease-out 0.3s;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    outline: none;
+    letter-spacing: 3px;
+    position: relative;
+    top: 1vh;
+    cursor: pointer;
+    user-select: none;
+    
+ 
+}
+  
+  .submit:active {
+    background-color: rgba(66, 66, 66, 0.856);
+    box-shadow: 0 5px rgb(196, 196, 196);
+    transform: translateY(4px);
+  }
+
+
+.submit:hover {
+    box-shadow: inset 300px 0 0 0 rgb(54, 54, 54);
+    background-color: rgba(66, 66, 66, 0.856)
+}
+
+
+.option2 {
+    color: rgb(196, 196, 196)
 }
 
 

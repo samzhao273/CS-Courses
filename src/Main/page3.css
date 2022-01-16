@@ -95,15 +95,15 @@
   }
 
   .return{
-    animation: fade-in-button 5s ;
+    animation: fade-in-button 4s ;
   }
 
   .yourCourses{
-    animation: fade-in-left 6s;
+    animation: fade-in-left 4s;
   }
 
   .nextCourses{
-    animation: fade-in-right 7s;
+    animation: fade-in-right 5s;
   }
 
   .return {
@@ -150,5 +150,11 @@ form{
 
 
 body{
-  background-color: gray;
+  background-color: gray
+
+
+
 }
+
+
+
