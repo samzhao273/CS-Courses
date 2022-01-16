@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 
-/* * {
+/* /* * {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
 
 } */
-
+ 
 
 
 
@@ -27,7 +27,7 @@
  
 }
 
-/* .submit {
+.submit {
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -41,7 +41,7 @@
     border-radius: 15px;
     box-shadow: 0 9px rgb(5, 80, 21);
     
-  } */
+  }
   
   .submit:hover {background-color: #04bb0a}
   
@@ -53,10 +53,10 @@
 
 
 
-/* .Description {
+.Description {
     position: relative;
     top: 30vh;
-} */
+}
 
 .submit:hover {
     box-shadow: inset 300px 0 0 0 #23c245;
@@ -67,6 +67,7 @@
 
 body {
     text-align: center;
-    background-color: white;
+    background-color: grey;
 
 }
+
