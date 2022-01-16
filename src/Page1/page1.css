@@ -48,23 +48,6 @@ body {
     padding-bottom: 20px;
  
 }
-
-/* .submit {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #25a52a;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgb(5, 80, 21);
-    
-  } */
-  
   
   .submit:active {
     background-color: rgba(66, 66, 66, 0.856);
@@ -72,12 +55,6 @@ body {
     transform: translateY(4px);
   }
 
-
-
-/* .Description {
-    position: relative;
-    top: 30vh;
-} */
 
 .submit:hover {
     box-shadow: inset 300px 0 0 0 rgb(54, 54, 54);
