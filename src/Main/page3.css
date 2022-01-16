@@ -2,7 +2,7 @@
 
 *{
     font-family: 'Roboto Mono', monospace;
-    /* font-size: x-large; */
+
 
 }
 
@@ -66,24 +66,21 @@
     0%     { opacity: 0; }
     12%    { opacity: 0; }
     86%   { opacity: 1; }
-    /* 80%   { opacity: 0; }
-    100%  { opacity: 1; } */
+
   }
 
 @keyframes fade-in-right {
     0%     { opacity: 0; }
     35%    { opacity: 0; }
     100%   { opacity: 1; }
-    /* 80%   { opacity: 0; }
-    100%  { opacity: 1; } */
+
   }
   
   @keyframes fade-in-button {
     0%     { opacity: 0; }
     60%    { opacity: 0; }
     100%   { opacity: 1; }
-    /* 80%   { opacity: 0; }
-    100%  { opacity: 1; } */
+
   }
 
   .leftside h5{

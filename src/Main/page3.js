@@ -315,20 +315,7 @@ function loadFutureCourses() {
             paragraph.innerText = allCpscCourses[i].name;
             getNextCourses.appendChild(paragraph)
         }
-
-        // for (let j = 0; j < allCpscCourses.length; j++) {
-        //     if (allCpscCourses[j].prereqs.includes(kekeke[i])) {
-        //             var paragraph = document.createElement('p');
-        //             paragraph.innerText = allCpscCourses[i].name;
-        //             getNextCourses.appendChild(paragraph);
-
-        //     }     
-        // } 
     }
-
-        // for (let i = 0; i < yourCourses.length; i++) {
-        //     if (yourCourses[i] 
-        // }
 }
 
 
