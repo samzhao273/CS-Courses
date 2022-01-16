@@ -27,7 +27,7 @@ body {
     padding-top: 17vh;
     line-height: 1.45;
     color: rgb(196, 196, 196);
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .submit {
@@ -46,6 +46,8 @@ body {
     letter-spacing: 3px;
     position: relative;
     top: 1vh;
+    cursor: pointer;
+    user-select: none;
     
  
 }
