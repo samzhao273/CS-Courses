@@ -11,7 +11,7 @@ h2 {
 }
 
 h1 {
-    margin-top: 5vh;
+    margin-top: 10vh;
     text-align: center;
     color: rgb(196, 196, 196);
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 .select-box .options-container {
-    background: #2f3640;
+    background: #828a92;
     color: white;
     max-height: 0;
     width: 100%;
@@ -61,12 +61,12 @@ h1 {
 
 .select-box .options-container::-webkit-scrollbar {
     width: 8px;
-    background: black;
+    background: rgb(31, 34, 48);
     border-radius: 0 8px 8px 0;
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
-    background: #525861;
+    background: #a5a5a7;
     border-radius: 0 8px 8px 0;
 }
 
@@ -101,7 +101,7 @@ h1 {
 }
 
 .select-box2 .options-container2 {
-    background: #2f3640;
+    background: #828a92;
     color: white;
     max-height: 0;
     width: 100%;
@@ -133,7 +133,7 @@ h1 {
 
 .select-box2 .options-container2::-webkit-scrollbar {
     width: 8px;
-    background: black;
+    background: rgb(37, 41, 53);
     border-radius: 0 8px 8px 0;
 }
 
